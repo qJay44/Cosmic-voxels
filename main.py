@@ -46,7 +46,7 @@ class Star:
     
 class Starfield:
     def __init__(self, app):
-        self.stars = [Star(app) for i in range(NUM_STARS)]
+        self.stars = [Star(app) for _ in range(NUM_STARS)]
 
     def run(self):
         [star.update() for star in self.stars]
